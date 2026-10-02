@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supermarket Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Supermarket Assistant</h1>
+
+        <p class="subtitle">
+            Enter the items you want to find in the supermarket.
+        </p>
+
+        <!-- Chat messages appear here -->
+        <div id="log" class="chat-log">
+
+            <div class="msg bot">
+                <div class="bubble">
+                    Hello! What would you like to buy?
+                    <br>
+                    Example: "I need apples, milk and detergent."
+                </div>
+            </div>
+
+        </div>
+
+        <!-- User input -->
+        <form id="composer" class="composer" autocomplete="off">
+
+            <input
+                id="user-input"
+                type="text"
+                placeholder="Enter your shopping list..."
+                aria-label="Shopping list"
+                required
+            >
+
+            <button type="submit" id="send-btn">
+                Find Items
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

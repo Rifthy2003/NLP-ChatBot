@@ -1,0 +1,22 @@
+{
+  "products": [
+    {"name": "Apple", "aliases": ["apples", "red apple", "green apple"], "shelf": "Shelf 3B", "aisle": "Aisle 1 - Fresh Produce"},
+    {"name": "Banana", "aliases": ["bananas"], "shelf": "Shelf 3C", "aisle": "Aisle 1 - Fresh Produce"},
+    {"name": "Milk", "aliases": ["milk carton", "whole milk"], "shelf": "Shelf 1A", "aisle": "Aisle 2 - Dairy & Eggs"},
+    {"name": "Egg", "aliases": ["eggs", "egg carton"], "shelf": "Shelf 1B", "aisle": "Aisle 2 - Dairy & Eggs"},
+    {"name": "Cheese", "aliases": ["cheddar cheese", "cheese block"], "shelf": "Shelf 1C", "aisle": "Aisle 2 - Dairy & Eggs"},
+    {"name": "Bread", "aliases": ["loaf", "loaves", "white bread"], "shelf": "Shelf 4A", "aisle": "Aisle 3 - Bakery"},
+    {"name": "Detergent", "aliases": ["laundry detergent", "washing powder"], "shelf": "Shelf 7A", "aisle": "Aisle 6 - Household"},
+    {"name": "Dish Soap", "aliases": ["dishwashing liquid", "dish washing soap"], "shelf": "Shelf 7B", "aisle": "Aisle 6 - Household"},
+    {"name": "Toothpaste", "aliases": ["tooth paste"], "shelf": "Shelf 8A", "aisle": "Aisle 7 - Personal Care"},
+    {"name": "Shampoo", "aliases": [], "shelf": "Shelf 8B", "aisle": "Aisle 7 - Personal Care"},
+    {"name": "Rice", "aliases": ["rice bag", "basmati rice"], "shelf": "Shelf 5A", "aisle": "Aisle 4 - Grains & Staples"},
+    {"name": "Sugar", "aliases": [], "shelf": "Shelf 5B", "aisle": "Aisle 4 - Grains & Staples"},
+    {"name": "Salt", "aliases": [], "shelf": "Shelf 5C", "aisle": "Aisle 4 - Grains & Staples"},
+    {"name": "Coffee", "aliases": ["coffee powder", "instant coffee"], "shelf": "Shelf 6A", "aisle": "Aisle 5 - Beverages"},
+    {"name": "Tea", "aliases": ["tea bags", "tea leaves"], "shelf": "Shelf 6B", "aisle": "Aisle 5 - Beverages"},
+    {"name": "Orange Juice", "aliases": ["juice", "orange juice bottle"], "shelf": "Shelf 6C", "aisle": "Aisle 5 - Beverages"},
+    {"name": "Chocolate", "aliases": ["chocolate bar"], "shelf": "Shelf 9A", "aisle": "Aisle 8 - Snacks"},
+    {"name": "Chips", "aliases": ["potato chips", "crisps"], "shelf": "Shelf 9B", "aisle": "Aisle 8 - Snacks"}
+  ]
+}

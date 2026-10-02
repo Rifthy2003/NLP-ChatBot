@@ -1,0 +1,507 @@
+/* ==========================================
+   SUPERMARKET ASSISTANT - STYLE.CSS
+   ========================================== */
+
+/* ---------- Global ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f5f3;
+    color: #222;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ---------- Heading ---------- */
+
+h1 {
+    margin: 0 0 8px;
+
+    text-align: center;
+
+    color: #2e7d32;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 0 0 25px;
+
+    text-align: center;
+
+    color: #666666;
+
+    font-size: 15px;
+}
+
+
+/* ---------- Chat Area ---------- */
+
+.chat-log {
+    min-height: 300px;
+    max-height: 420px;
+
+    overflow-y: auto;
+
+    padding: 15px;
+    margin-bottom: 20px;
+
+    background-color: #fafafa;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    scroll-behavior: smooth;
+}
+
+
+/* ---------- Messages ---------- */
+
+.msg {
+    display: flex;
+
+    width: 100%;
+
+    margin-bottom: 12px;
+}
+
+.msg.bot {
+    justify-content: flex-start;
+}
+
+.msg.user {
+    justify-content: flex-end;
+}
+
+
+/* ---------- Message Bubbles ---------- */
+
+.bubble {
+    max-width: 80%;
+
+    padding: 11px 14px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    word-wrap: break-word;
+}
+
+.msg.bot .bubble {
+    background-color: #eeeeee;
+
+    color: #222222;
+
+    border-bottom-left-radius: 3px;
+}
+
+.msg.user .bubble {
+    background-color: #2e7d32;
+
+    color: #ffffff;
+
+    border-bottom-right-radius: 3px;
+}
+
+.bubble em {
+    color: #555555;
+}
+
+.msg.user .bubble em {
+    color: #eeeeee;
+}
+
+
+/* ==========================================
+   SEARCH RESULTS
+   ========================================== */
+
+.results {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+
+/* ---------- Product Result Card ---------- */
+
+.tag {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+
+    gap: 4px 15px;
+
+    width: 100%;
+
+    margin-bottom: 8px;
+    padding: 11px 12px;
+
+    background-color: #e8f5e9;
+
+    border: 1px solid #c8e6c9;
+    border-radius: 6px;
+}
+
+
+/* Product Name */
+
+.tag-name {
+    grid-column: 1;
+    grid-row: 1;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #222222;
+}
+
+
+/* Aisle / Category */
+
+.tag-aisle {
+    grid-column: 1;
+    grid-row: 2;
+
+    font-size: 13px;
+
+    color: #666666;
+}
+
+
+/* Shelf Number */
+
+.tag-shelf {
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+    align-self: center;
+
+    padding: 6px 10px;
+
+    background-color: #2e7d32;
+
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   PRODUCTS NOT FOUND
+   ========================================== */
+
+.miss-list {
+    margin-top: 12px;
+
+    color: #b3261e;
+
+    font-size: 14px;
+}
+
+.miss-list span {
+    display: inline-block;
+
+    margin: 4px 4px 0 0;
+    padding: 4px 8px;
+
+    background-color: #fdecea;
+
+    color: #b3261e;
+
+    border: 1px solid #f3c7c3;
+    border-radius: 5px;
+}
+
+
+/* ==========================================
+   RECEIPT BUTTONS
+   ========================================== */
+
+.receipt-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.receipt-actions button {
+    padding: 8px 12px;
+
+    background-color: #ffffff;
+
+    color: #2e7d32;
+
+    border: 1px solid #2e7d32;
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.receipt-actions button:hover {
+    background-color: #2e7d32;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   INPUT / COMPOSER
+   ========================================== */
+
+.composer {
+    display: flex;
+
+    width: 100%;
+
+    gap: 10px;
+}
+
+
+/* ---------- Input ---------- */
+
+#user-input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 12px 14px;
+
+    background-color: #ffffff;
+
+    color: #222222;
+
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#user-input::placeholder {
+    color: #999999;
+}
+
+#user-input:focus {
+    outline: none;
+
+    border-color: #2e7d32;
+
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.12);
+}
+
+
+/* ---------- Find Items Button ---------- */
+
+#send-btn {
+    padding: 12px 20px;
+
+    background-color: #2e7d32;
+
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+#send-btn:hover {
+    background-color: #256428;
+}
+
+#send-btn:active {
+    background-color: #1b4f20;
+}
+
+#send-btn:disabled {
+    background-color: #999999;
+
+    cursor: not-allowed;
+
+    opacity: 0.7;
+}
+
+
+/* ==========================================
+   TYPING / LOADING MESSAGE
+   ========================================== */
+
+.typing {
+    padding: 5px 2px;
+
+    color: #777777;
+
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+/* ==========================================
+   SCROLLBAR
+   ========================================== */
+
+.chat-log::-webkit-scrollbar {
+    width: 7px;
+}
+
+.chat-log::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+}
+
+.chat-log::-webkit-scrollbar-thumb {
+    background-color: #bbbbbb;
+
+    border-radius: 5px;
+}
+
+.chat-log::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .chat-log {
+        min-height: 280px;
+        max-height: 400px;
+
+        padding: 12px;
+    }
+
+    .bubble {
+        max-width: 90%;
+
+        font-size: 14px;
+    }
+
+    .composer {
+        flex-direction: column;
+    }
+
+    #user-input {
+        width: 100%;
+    }
+
+    #send-btn {
+        width: 100%;
+
+        padding: 12px;
+    }
+
+    .tag {
+        gap: 4px 8px;
+    }
+
+    .tag-name {
+        font-size: 14px;
+    }
+
+    .tag-shelf {
+        font-size: 12px;
+
+        padding: 5px 8px;
+    }
+
+    .receipt-actions {
+        flex-direction: column;
+    }
+
+    .receipt-actions button {
+        width: 100%;
+    }
+}
+
+
+/* ==========================================
+   VERY SMALL SCREENS
+   ========================================== */
+
+@media (max-width: 380px) {
+
+    .container {
+        width: 96%;
+
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .chat-log {
+        padding: 10px;
+    }
+
+    .bubble {
+        max-width: 95%;
+    }
+}
